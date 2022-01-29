@@ -15,7 +15,7 @@
   background-size: cover;
   // przekrecenie całej sekcji o -7 oraz w pozniejszym etapie wyrównanie wszystkich child elementów sekcji (direct child & > * ) o 7 deg
   transform: skewY(-7deg);
-  margin-top: -12rem;
+  margin-top: -13rem;
 
   & > * {
     transform: skewY(7deg);
