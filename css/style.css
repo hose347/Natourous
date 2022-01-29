@@ -112,7 +112,7 @@ body {
   border-radius: 30px;
   transition: all 0.2s;
   position: relative;
-  font-size: 1.6rem; }
+  font-size: 1.5rem; }
 
 .btn:hover {
   transform: translateY(-3px);
@@ -167,15 +167,22 @@ body {
 
 .card {
   perspective: 150rem;
-  -moz-perspective: 150rem; }
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem; }
   .card__side {
     background-color: orangered;
-    color: #fff;
+    color: white;
     font-size: 2rem;
     height: 50rem;
-    transition: all 0.8s; }
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    backface-visibility: hidden; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: white; }
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
@@ -290,7 +297,7 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801)), url(../img/nat-4.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -12rem; }
+  margin-top: -13rem; }
   .section-features > * {
     transform: skewY(7deg); }
 
