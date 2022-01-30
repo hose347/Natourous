@@ -173,20 +173,19 @@ body {
   .card__side {
     color: white;
     font-size: 2rem;
-    top: 0;
-    right: 0;
-    z-index: 99;
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
-    z-index: 10;
+    top: 0;
+    left: 0;
     width: 100%;
     backface-visibility: hidden; }
     .card__side--front {
-      background-color: orangered; }
+      background-color: white; }
     .card__side--back {
-      background-color: green;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)); }
   .card:hover .card__side--front {
     transform: rotateY(180deg); }
   .card:hover .card__side--back {
