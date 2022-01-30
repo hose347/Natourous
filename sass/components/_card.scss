@@ -7,22 +7,28 @@
   &__side {
     color: white;
     font-size: 2rem;
-    top: 0;
-    right: 0;
-    z-index: 99;
+
     height: 50rem;
     transition: all 0.8s ease;
     position: absolute;
-    z-index: 10;
+    top: 0;
+    left: 0;
     width: 100%;
     backface-visibility: hidden;
 
     &--front {
-      background-color: orangered;
+      background-color: white;
     }
     &--back {
-      background-color: green;
       transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-secondary-light, 0.8),
+          rgba($color-secondary-dark, 0.8)
+        );
+      }
     }
   }
 
