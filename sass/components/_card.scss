@@ -60,7 +60,7 @@
     }
 
     &--2 {
-      background-image: url(../img/nat-5.jpg);
+      background-image: url(../img/nat-6.jpg);
     }
 
     &--3 {
@@ -112,5 +112,28 @@
         border-bottom: 1px solid $color-grey-light-2;
       }
     }
+  }
+  // Front side styling
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box {
+    text-align: center;
+    color: $color-white;
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 7rem;
+    font-weight: 100;
   }
 }
