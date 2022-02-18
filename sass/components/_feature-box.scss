@@ -24,7 +24,6 @@
       $color-primary-light,
       $color-primary-dark
     );
-    -webkit-background-clip: text;
     color: transparent;
 
     @include respond(tab-port) {
