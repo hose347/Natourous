@@ -56,10 +56,20 @@
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
       z-index: 20;
+
+      @include respond(tab-port) {
+        outline: 0px;
+        transform: scale(1) translate(0);
+        z-index: 0;
+      }
     }
   }
   // zaznaczenie hover na kompozycji, selecting photo które nie jest hover
   &:hover &__photo:not(:hover) {
     transform: scale(0.9);
+
+    @include respond(tab-port) {
+      transform: scale(1);
+    }
   }
 }

@@ -407,8 +407,16 @@ body {
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
       z-index: 20; }
+      @media (max-width: 56.25em) {
+        .composition__photo:hover {
+          outline: 0px;
+          transform: scale(1) translate(0);
+          z-index: 0; } }
   .composition:hover .composition__photo:not(:hover) {
     transform: scale(0.9); }
+    @media (max-width: 56.25em) {
+      .composition:hover .composition__photo:not(:hover) {
+        transform: scale(1); } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.8);
@@ -425,11 +433,14 @@ body {
     font-size: 6rem;
     margin-bottom: 0.5rem;
     display: inline-block;
+    background-clip: text;
     background-image: linear-gradient(to right, #7ed56f, #28b485);
     color: transparent; }
     @media (max-width: 56.25em) {
       .feature-box__icon {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+        background-color: transparent; } }
   .feature-box:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
