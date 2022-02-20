@@ -40,6 +40,10 @@
     &::after {
       background-color: $color-white;
     }
+
+    @include respond(tab-port) {
+      align-self: center;
+    }
   }
 
   &--green {
